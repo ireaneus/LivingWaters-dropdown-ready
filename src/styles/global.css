@@ -6,7 +6,7 @@
   --secondary-color: #1e40af;
   --text-color: #1f2937;
   --background-color: #ffffff;
-  --header-background: teal;
+  --header-background: #006064;
   --nav-text-color: #ffffff;
   --header-text-color: antiquewhite; /* New variable for header text color */
   --dropdown-background: #ffffff;
@@ -19,7 +19,6 @@ body {
   color: var(--text-color);
   margin: 0;
   padding: 0;
-  line-height: 1.6;
 }
 
 .container {
@@ -37,8 +36,12 @@ body {
 .nav-header {
   color: var(--header-text-color);
   margin: 0 0 1rem 0;
-  font-size: 1.3rem;
-  letter-spacing: .75em;
+  font-size: larger;
+  letter-spacing: .50em;
+  text-shadow: 
+    1px 1px 0 #fff,  /* Highlight shadow (light color, no blur) */
+    -1px -1px 0 #222; /* Depth shadow (dark color, no blur) */
+  font-weight: bold;   /* Optional: make the text bold */
   text-align: center;
 }
 
@@ -99,62 +102,49 @@ body {
 .markdown-content {
   max-width: 800px;
   margin: 0 auto;
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-  margin: 2rem 0 1rem;
-}
-
-p {
-  margin-bottom: 1.5rem;
-}
-
-.markdown > * {
   all: revert;
-  font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   line-height: 1.6;
 }
 
-.markdown h1,
-.markdown h2,
-.markdown h3,
-.markdown h4,
-.markdown h5,
-.markdown h6 {
+p, h1, h2, h3, h4, h5, h6, ul, ol, blockquote {
+  margin: 10px;
+  padding: 5px;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
   margin-top: 1.5em;
 }
 
-.markdown p {
+.markdown-content p {
   margin: 1em 0;
 }
 
-.markdown a {
+.markdown-content a {
   color: #3182ce;
   text-decoration: underline;
 }
 
-.markdown code {
+.markdown-content code {
   background-color: #f5f5f5;
   padding: 2px 4px;
   border-radius: 4px;
 }
 
-.markdown ul,
-.markdown ol {
+.markdown-content ul,
+.markdown-content ol {
   margin-left: 1em;
   margin-bottom: 1em;
 }
 
-.markdown blockquote {
+.markdown-content blockquote {
   border-left: 4px solid #ccc;
   padding-left: 1em;
   color: #666;
@@ -162,6 +152,6 @@ p {
 }
 
 /* Add this rule to color italic text red */
-.markdown em {
+.markdown-content em {
   color: firebrick;
 }
