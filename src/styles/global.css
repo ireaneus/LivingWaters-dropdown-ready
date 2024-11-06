@@ -1,18 +1,20 @@
 /* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 :root {
   --primary-color: #3b82f6;
   --secondary-color: #1e40af;
   --text-color: #1f2937;
   --background-color: #ffffff;
-  --header-background: #f3f4f6;
+  --header-background: teal;
   --dropdown-background: #ffffff;
   --dropdown-hover: #f3f4f6;
 }
 
 body {
-  font-family: system-ui, -apple-system, sans-serif;
+  background-color: antiquewhite;
+  font-family: "EB Garamond", serif;
   color: var(--text-color);
-  background-color: var(--background-color);
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -99,4 +101,55 @@ h2 {
 
 p {
   margin-bottom: 1.5rem;
+}
+
+.markdown > * {
+  all: revert;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  margin-top: 1.5em;
+}
+
+.markdown p {
+  margin: 1em 0;
+}
+
+.markdown a {
+  color: #3182ce;
+  text-decoration: underline;
+}
+
+.markdown code {
+  background-color: #f5f5f5;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.markdown ul,
+.markdown ol {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.markdown blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 1em;
+  color: #666;
+  margin: 1.5em 0;
+}
+
+/* Add this rule to color italic text red */
+.markdown em {
+  color: firebrick;
 }
