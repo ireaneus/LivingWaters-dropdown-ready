@@ -7,6 +7,8 @@
   --text-color: #1f2937;
   --background-color: #ffffff;
   --header-background: teal;
+  --nav-text-color: #ffffff;
+  --header-text-color: antiquewhite; /* New variable for header text color */
   --dropdown-background: #ffffff;
   --dropdown-hover: #f3f4f6;
 }
@@ -32,12 +34,22 @@ body {
   padding: 1rem 0;
 }
 
+.nav-header {
+  color: var(--header-text-color);
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+  letter-spacing: .75em;
+  text-align: center;
+}
+
 .nav-menu {
+  color: var(--header-text-color);
   display: flex;
   gap: 2rem;
   list-style: none;
   margin: 0;
   padding: 0;
+  justify-content: left;
 }
 
 .dropdown {
@@ -48,7 +60,7 @@ body {
 .dropdown-button {
   background: none;
   border: none;
-  color: var(--text-color);
+  color: var(--nav-text-colorcolor);
   font-size: 1rem;
   cursor: pointer;
   padding: 0.5rem 1rem;

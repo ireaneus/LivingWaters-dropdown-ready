@@ -17,6 +17,7 @@ const sortedDevotions = devotions.sort(sortByDate);
 
 <nav class="nav-container">
   <div class="container">
+    <h1 class="nav-header">Living Waters RV Ministry</h1>
     <ul class="nav-menu">
       <li class="dropdown">
         <button class="dropdown-button">Sermons</button>
@@ -35,7 +36,7 @@ const sortedDevotions = devotions.sort(sortByDate);
         </div>
       </li>
       <li class="dropdown">
-        <button class="dropdown-button">Devotions</button>
+        <button class="dropdown-button">Devotionals</button>
         <div class="dropdown-content">
           {sortedDevotions.map(devotion => (
             <a href={`/devotions/${devotion.slug}`}>{devotion.data.title}</a>
