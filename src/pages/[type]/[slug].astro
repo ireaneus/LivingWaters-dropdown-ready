@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const sermons = await getCollection('sermons');
+  const articles = await getCollection('articles');
+  const devotions = await getCollection('devotions');
+
+  const allContent = [
+    ...sermons.map(entry => ({ type: 'sermons', entry })),
+    ...articles.map(entry => ({ type: 'articles', entry })),
+    ...devotions.map(entry => ({ type: 'devotions', entry }))
+  ];
+
+  return allContent.map(({ type, entry }) => ({
+    params: { 
+      type,
+      slug: entry.slug 
+    },
+    props: { entry }
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.title}>
+  <div class="markdown-content">
+    <h1>{entry.data.title}</h1>
+    <div class="date">{entry.data.date.toLocaleDateString()}</div>
+    <Content />
+  </div>
+</Layout>

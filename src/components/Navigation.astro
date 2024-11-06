@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+
+const sermons = await getCollection('sermons');
+const articles = await getCollection('articles');
+const devotions = await getCollection('devotions');
+
+// Sort content by date
+const sortByDate = (a, b) => {
+  return b.data.date.getTime() - a.data.date.getTime();
+};
+
+const sortedSermons = sermons.sort(sortByDate);
+const sortedArticles = articles.sort(sortByDate);
+const sortedDevotions = devotions.sort(sortByDate);
+---
+
+<nav class="nav-container">
+  <div class="container">
+    <ul class="nav-menu">
+      <li class="dropdown">
+        <button class="dropdown-button">Sermons</button>
+        <div class="dropdown-content">
+          {sortedSermons.map(sermon => (
+            <a href={`/sermons/${sermon.slug}`}>{sermon.data.title}</a>
+          ))}
+        </div>
+      </li>
+      <li class="dropdown">
+        <button class="dropdown-button">Articles</button>
+        <div class="dropdown-content">
+          {sortedArticles.map(article => (
+            <a href={`/articles/${article.slug}`}>{article.data.title}</a>
+          ))}
+        </div>
+      </li>
+      <li class="dropdown">
+        <button class="dropdown-button">Devotions</button>
+        <div class="dropdown-content">
+          {sortedDevotions.map(devotion => (
+            <a href={`/devotions/${devotion.slug}`}>{devotion.data.title}</a>
+          ))}
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
