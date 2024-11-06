@@ -6,7 +6,7 @@
   --secondary-color: #1e40af;
   --text-color: #1f2937;
   --background-color: #ffffff;
-  --header-background: #006064;
+  --header-background: #577077;
   --nav-text-color: #ffffff;
   --header-text-color: antiquewhite; /* New variable for header text color */
   --dropdown-background: #ffffff;
@@ -38,9 +38,6 @@ body {
   margin: 0 0 1rem 0;
   font-size: larger;
   letter-spacing: .50em;
-  text-shadow: 
-    1px 1px 0 #fff,  /* Highlight shadow (light color, no blur) */
-    -1px -1px 0 #222; /* Depth shadow (dark color, no blur) */
   font-weight: bold;   /* Optional: make the text bold */
   text-align: center;
 }
