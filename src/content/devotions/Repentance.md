@@ -11,8 +11,4 @@ Repentance involves a change of heart and mind that results in a transformed lif
 
 The writer of Hebrews also warns of the danger of hardened hearts, as exemplified by Esau, who *"found no place for repentance, though he sought for it with tears."* **(Hebrews 12:17)**. This illustrates the seriousness of sin and the urgency of turning to God while He extends His grace. True repentance is characterized by a godly sorrow that leads to life, not mere regret or worldly sorrow that leads to death. *"For the sorrow that is according to the will of God produces a repentance without regret, leading to salvation."* **(2 Corinthians 7:10)**.
 
-Thus, repentance is a necessary and ongoing aspect of the Christian life, a continual turning from sin and drawing near to God through Jesus Christ. It is through His redemptive work that we are given the power to repent, and it is in His grace that we find forgiveness and restoration.
-
---- 
-
-This statement emphasizes that repentance is a divinely enabled response to the recognition of sin, rooted in God’s kindness and grace. Let me know if any adjustments or additional scripture references are needed!
+Thus, repentance is a necessary and ongoing aspect of the Christian life, a continual turning from sin and drawing near to God through Jesus Christ. It is through His redemptive work that we are given the power to repent, and it is in His grace that we find forgiveness of sins
