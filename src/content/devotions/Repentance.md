@@ -1,9 +1,7 @@
 ---
-title: repentance
+title: Repentance
 date: 2024-06-11
 ---
-
-### **Repentance**
 
 I believe that **repentance** is a heartfelt sorrow for sin, a renouncing of it, and a sincere commitment to walk in obedience to God. Repentance is not merely a human decision but a grace granted by God, wrought by the Holy Spirit, and a response to the realization of God’s holiness and our own sinfulness. As Paul writes, *"The kindness of God leads you to repentance."* **(Romans 2:4)**. It is God’s goodness and mercy, shown supremely in Christ’s sacrificial work, that draws sinners to genuine repentance.
 
@@ -95,3 +93,9 @@ David’s response to God’s judgment was to seek restoration through repentanc
 David’s story in **1 Chronicles 21** underscores the importance of repentance, the gravity of sin, and the necessity of atonement. It foreshadows the ultimate sacrifice of Jesus, who bore our sins and brought us reconciliation with God. Just as God accepted David’s offerings, He accepts us through the perfect sacrifice of His Son. 
 
 --- 
+---
+---
+---
+---
+---
+---
