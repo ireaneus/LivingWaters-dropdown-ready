@@ -1,6 +1,7 @@
 /* Global styles */
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
+
 :root {
   --primary-color: #3b82f6;
   --secondary-color: #1e40af;
@@ -14,9 +15,7 @@
 }
 
 body {
-  background-color: antiquewhite;
   font-family: "EB Garamond", serif;
-  color: var(--text-color);
   margin: 0;
   padding: 0;
 }
