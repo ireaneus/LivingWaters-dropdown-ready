@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
 import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
 
 interface Props {
   title: string;
@@ -27,5 +29,6 @@ const { title } = Astro.props;
     <main class="container content">
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
